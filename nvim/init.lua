@@ -1,9 +1,5 @@
-require "options"
-require "bindings"
-require "configs"
-
-vim.pack.add({
- "https://github.com/neovim/nvim-lspconfig",
-})
-
-
+require("config.lazy")
+require("config.lsp-config")
+require("config.options")
+require("config.bindings")
+require("config.configs")
