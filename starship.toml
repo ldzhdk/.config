@@ -1,0 +1,37 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Blank line between prompts (set to false for a fully compact terminal)
+add_newline = true
+
+# Only what you need, all on one line
+format = "$username$hostname$directory$git_branch$character"
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_user = 'bold green'
+style_root = 'bold red'
+
+[hostname]
+ssh_only = false
+format = '[@$hostname]($style):'
+style = 'bold green'
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[directory]
+truncation_length = 2
+truncate_to_repo = false
+
+[git_branch]
+format = '[$branch]($style) '
+style = 'bold yellow'
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = 'bold yellow'
+
+[package]
+disabled = true
