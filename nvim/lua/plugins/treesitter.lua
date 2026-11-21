@@ -6,8 +6,18 @@ return {
 	config = function()
 		-- replaces ensure_installed; installs asynchronously, skips already-installed parsers
 		require("nvim-treesitter").install({
-			"go", "lua", "typescript", "javascript", "json", "yaml",
-			"html", "css", "bash", "python", "markdown", "scala",
+			"go",
+			"lua",
+			"typescript",
+			"javascript",
+			"json",
+			"yaml",
+			"html",
+			"css",
+			"bash",
+			"python",
+			"markdown",
+			"scala"
 		})
 
 		-- replaces highlight = { enable = true }
