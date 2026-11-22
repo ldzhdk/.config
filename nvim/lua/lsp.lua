@@ -1,5 +1,4 @@
 vim.lsp.config("*", {	capabilities = require("cmp_nvim_lsp").default_capabilities() })
-vim.diagnostic.config({ virtual_text = true })
 
 vim.lsp.config("gopls", {
 	settings = {
@@ -38,7 +37,5 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 	end
 })
 
-
 vim.lsp.enable({ "gopls" })
-
 vim.lsp.enable({ "lua_ls" })
