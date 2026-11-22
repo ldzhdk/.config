@@ -8,6 +8,15 @@ vim.pack.add({
     "https://github.com/olexsmir/gopher.nvim"
 })
 
+local fzf = require("fzf-lua")
+
+vim.keymap.set("n", "<leader>ff", fzf.files,       { desc = "Find files" })
+vim.keymap.set("n", "<leader>fg", fzf.live_grep,   { desc = "Live grep" })
+vim.keymap.set("n", "<leader>fb", fzf.buffers,     { desc = "Buffers" })
+vim.keymap.set("n", "<leader>fh", fzf.helptags,    { desc = "Help tags" })
+vim.keymap.set("n", "<leader>fr", fzf.oldfiles,    { desc = "Recent files" })
+vim.keymap.set("n", "<leader>fw", fzf.grep_cword,  { desc = "Grep word under cursor" })
+
 require("gopher").setup({})
 
 require("mini.notify").setup({
