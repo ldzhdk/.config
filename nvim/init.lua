@@ -1,4 +1,4 @@
-require("config.opt")
+require("config.options")
 require("config.binds")
 require("config.autocommands")
 require("config.diagnostics")
